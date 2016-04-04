@@ -1,0 +1,12 @@
+<div ng-controller='ViewRecipesDetailsCtrl'>
+	{{recipe.name}}<br>
+	{{recipe.instructions}}<br>
+	<img src="http://localhost:3000/recipes/{{recipe.id}}/image">
+
+	<a href="#/recipes/{{recipe.id}}/edit-recipe" id="Update_recipe">Update Recipe</a>
+
+</div>
+<div ng-controller='DeleteRecipesCtrl'>
+	<form ng-click='deleteRecipe()' id="Delete_recipe">
+	<input type="submit" value="delete"></form>
+</div>

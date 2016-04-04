@@ -1,0 +1,9 @@
+<h1>Editing Recipe</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @recipe %> |
+<%= link_to 'Back', recipes_path %>
+<%= simple_form_for @recipe, url: recipes_path do |form| %>
+  <%= form.input :avatar, as: :file %>
+<% end %>
